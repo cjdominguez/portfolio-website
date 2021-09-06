@@ -7,24 +7,70 @@
 
 @import url(./partials/_variables.css);
 
+body{
+    height: 100%;
+    background: linear-gradient(360deg, rgba(232,82,60) 47%, rgba(253, 244, 184) 0%);
 
+
+}
 
 /* start nav */
 /* when making these remember to add extra space after each call */
+/* logo padding*/
 .header_area .main-menu .navbar .navbar-brand {
-    padding: 0 1rem 0 0rem;
+    padding: 0px 0px;
+
 }
 
+/* navbar padding*/
 .header_area .main-menu .navbar{
-    padding: .5rem 2rem;
+    padding: 0px 80px;
 }
+
 
 .header_area .main-menu .nav-item .nav-link{
-    font: normal 500 15px/2px var(--oswald);
-    text-transform: uppercase;
-    padding: 1.7rem;
-    color: var(--title-color);
+    font: normal 500 17px/2px var(--Montserrat);
+    margin: 3px;
+    padding: 0 .7rem;
+    color: black;
 }
+
+.header_area .main-menu .navbar-nav .btn-primary{
+    padding: 0px 5px;
+    font: normal 500 17px/2px var(--Montserrat);
+    background: black;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow:var(--box-shadow);
+}
+
+.header_area .main-menu .navbar-nav .btn-primary .a:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+
+
+}
+.header_area .main-menu .navbar-nav .btn-primary .a::after{
+
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: var(--gradient-color);
+    content:"";
+    z-index:-1;
+    border-radius: 1px;
+    display: inline-block;
+    cursor: pointer
+
+}
+
+
 
 .header_area .main-menu .navbar-nav .active a{
     background: var(--gradient-color);
@@ -34,14 +80,42 @@
 }
 
 .header_area .main-menu .navbar-nav a:hover{
-    background: var(--gradient-color);
+    background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 
+.site-main .site-banner .site-title h3{
+    text-align: center;
+    padding:    120px 330px 0px 0px;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 10em;
+
+}
+
+.site-main .site-banner .site-title h1{
+    text-align: center;
+    padding-top: 0%;
+    font-weight: 500;
+    height: 1rem;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-main .site-banner .site-title h4{
+    text-align: center;
+    padding-top: 0%;
+    font-weight: 500;
+    height: 3em;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* end nav */
-
-
-
