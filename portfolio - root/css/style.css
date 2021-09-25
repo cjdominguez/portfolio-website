@@ -13,7 +13,6 @@ body{
 
 
 }
-
 /* start nav */
 /* when making these remember to add extra space after each call */
 /* logo padding*/
@@ -86,36 +85,50 @@ body{
     background-clip: text;
 }
 
-
+/*alters text in h3 tag and size of border*/
 .site-main .site-banner .site-title h3{
+
     text-align: center;
-    padding:    120px 330px 0px 0px;
-    font-size: 1rem;
+    padding:    85px 330px 0px 0px; /* changes text height*/
+    /**/
+    font-size: 6rem;
+    display: flex;
     font-weight: 500;
-    height: 10em;
+    height: 2.30em; /*vhanges box height */
 
 }
+.site-main .site-banner .site-title h5{
+
+    text-align: center;
+    padding:    0px 0px 0px 0px; /* changes text height*/
+    /**/
+    font-size: 2rem;
+    display: flex;
+    font-weight: 500;
+    height: 4rem; /*vhanges box height */
+}
+
+
 
 .site-main .site-banner .site-title h1{
+
     text-align: center;
-    padding-top: 0%;
-    font-weight: 500;
-    height: 1rem;
-    font-size: 3rem;
+    padding:    80px 0px 0px 115px; /* changes text height*/
+    /**/
+    font-size: 1.5rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    font-weight: 500;
+    height: 3 rem; /*vhanges box height*/
 }
 
 .site-main .site-banner .site-title h4{
+
     text-align: center;
+    padding:    0px 0px 100px 100px; /* changes text height*/
     padding-top: 0%;
     font-weight: 500;
-    height: 3em;
-    font-size: 3rem;
+    font-size: 7rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    height: 7.5rem; /*vhanges box height*/
 
-/* end nav */
+}
